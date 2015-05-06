@@ -1,42 +1,190 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="27" inline="false" x="207" y="62">
+  <block type="controls_whileUntil" id="1" inline="false" x="173" y="32">
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
-      <block type="sensor_button" id="92">
+      <block type="sensor_button" id="2">
         <field name="OBJECT">ENTER</field>
       </block>
     </value>
     <statement name="DO">
-      <block type="oled_cleardisplay" id="44">
+      <block type="oled_cleardisplay" id="3">
         <next>
-          <block type="oled_setcursor" id="108" inline="true">
+          <block type="oled_setcursor" id="4" inline="true">
             <value name="STARTX">
-              <block type="math_number" id="149">
+              <block type="math_number" id="5">
                 <field name="NUM">10</field>
               </block>
             </value>
             <value name="STARTY">
-              <block type="math_number" id="156">
+              <block type="math_number" id="6">
                 <field name="NUM">10</field>
               </block>
             </value>
             <next>
-              <block type="oled_drawtext" id="132">
+              <block type="oled_drawtext" id="7">
                 <field name="TEXT">leftFront=</field>
                 <next>
-                  <block type="oled_drawnumber" id="141" inline="true">
+                  <block type="oled_drawnumber" id="8" inline="true">
                     <value name="NUMBER">
-                      <block type="sensor_object" id="183">
+                      <block type="sensor_object" id="9">
                         <field name="OBJECT">LEFTFRONT</field>
                       </block>
                     </value>
                     <next>
-                      <block type="robot_delay" id="185" inline="true">
+                      <block type="robot_delay" id="10" inline="true">
                         <value name="DELAY">
-                          <block type="math_number" id="192">
+                          <block type="math_number" id="11">
                             <field name="NUM">200</field>
                           </block>
                         </value>
+                        <next>
+                          <block type="oled_setcursor" id="12" inline="true">
+                            <value name="STARTX">
+                              <block type="math_number" id="13">
+                                <field name="NUM">30</field>
+                              </block>
+                            </value>
+                            <value name="STARTY">
+                              <block type="math_number" id="14">
+                                <field name="NUM">10</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="oled_drawtext" id="15">
+                                <field name="TEXT">rightFront=</field>
+                                <next>
+                                  <block type="oled_drawnumber" id="16" inline="true">
+                                    <value name="NUMBER">
+                                      <block type="sensor_object" id="17">
+                                        <field name="OBJECT">RIGHTFRONT</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="robot_delay" id="18" inline="true">
+                                        <value name="DELAY">
+                                          <block type="math_number" id="19">
+                                            <field name="NUM">200</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="oled_setcursor" id="20" inline="true">
+                                            <value name="STARTX">
+                                              <block type="math_number" id="21">
+                                                <field name="NUM">40</field>
+                                              </block>
+                                            </value>
+                                            <value name="STARTY">
+                                              <block type="math_number" id="22">
+                                                <field name="NUM">20</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="oled_drawtext" id="23">
+                                                <field name="TEXT">rightSide=</field>
+                                                <next>
+                                                  <block type="oled_drawnumber" id="24" inline="true">
+                                                    <value name="NUMBER">
+                                                      <block type="sensor_object" id="25">
+                                                        <field name="OBJECT">RIGHTSIDE</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="robot_delay" id="26" inline="true">
+                                                        <value name="DELAY">
+                                                          <block type="math_number" id="27">
+                                                            <field name="NUM">200</field>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="oled_setcursor" id="28" inline="true">
+                                                            <value name="STARTX">
+                                                              <block type="math_number" id="29">
+                                                                <field name="NUM">0</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="STARTY">
+                                                              <block type="math_number" id="30">
+                                                                <field name="NUM">20</field>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block type="oled_drawtext" id="31">
+                                                                <field name="TEXT">leftSide=</field>
+                                                                <next>
+                                                                  <block type="oled_drawnumber" id="32" inline="true">
+                                                                    <value name="NUMBER">
+                                                                      <block type="sensor_object" id="33">
+                                                                        <field name="OBJECT">LEFTSIDE</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="robot_delay" id="34" inline="true">
+                                                                        <value name="DELAY">
+                                                                          <block type="math_number" id="35">
+                                                                            <field name="NUM">200</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <next>
+                                                                          <block type="oled_setcursor" id="36" inline="true">
+                                                                            <value name="STARTX">
+                                                                              <block type="math_number" id="37">
+                                                                                <field name="NUM">50</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="STARTY">
+                                                                              <block type="math_number" id="38">
+                                                                                <field name="NUM">25</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <next>
+                                                                              <block type="oled_drawtext" id="39">
+                                                                                <field name="TEXT">rear=</field>
+                                                                                <next>
+                                                                                  <block type="oled_drawnumber" id="40" inline="true">
+                                                                                    <value name="NUMBER">
+                                                                                      <block type="sensor_object" id="41">
+                                                                                        <field name="OBJECT">REAR</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <next>
+                                                                                      <block type="robot_delay" id="42" inline="true">
+                                                                                        <value name="DELAY">
+                                                                                          <block type="math_number" id="43">
+                                                                                            <field name="NUM">200</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </next>
+                                                                                  </block>
+                                                                                </next>
+                                                                              </block>
+                                                                            </next>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
                       </block>
                     </next>
                   </block>
